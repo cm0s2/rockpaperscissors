@@ -16,7 +16,8 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection, gameScore) {
     // Make player choice case-insensitive
-    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
+    playerSelection = playerSelection.charAt(0).toUpperCase() + 
+            playerSelection.slice(1).toLowerCase();
 
     // Tie 
     if (playerSelection === computerSelection) {
